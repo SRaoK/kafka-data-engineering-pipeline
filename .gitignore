@@ -1,4 +1,10 @@
 .DS_Store
 __pycache__/
 *.pyc
-connector-config.json
+
+# Ignore all data files and landing folders
+landing_zone/
+*.csv
+
+# Ignore all direct JSON connector configurations
+*connector-config.json
