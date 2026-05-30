@@ -1,0 +1,1 @@
+{"name":"file-stream-connector","config":{"connector.class":"org.apache.kafka.connect.file.FileStreamSourceConnector","tasks.max":"1","file":"/data/landing/users.csv","topic":"file.users"}}

@@ -42,6 +42,9 @@ services:
       - CONFIG_STORAGE_TOPIC=my_connect_configs
       - OFFSET_STORAGE_TOPIC=my_connect_offsets
       - STATUS_STORAGE_TOPIC=my_connect_statuses
+    volumes:
+      # This maps your Mac folder to an internal folder inside the container
+      - ./landing_zone:/data/landing
     depends_on:
       - kafka
       - postgres
